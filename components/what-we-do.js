@@ -22,7 +22,7 @@ export default function WhatWeDo({ data }) {
             ))}
           </div>
           <div className="hidden lg:block">
-            <Image
+            <img
               src={`${process.env.STRAPI_API_URL}${service_card[0].icon.url}`}
               alt="Tech Illustration"
               width={500}
@@ -67,7 +67,7 @@ function ServiceCard({ service }) {
         <div className="bg-[#4ade80]/10 p-3 rounded-full">
           {/* If the icon is an image, render it as an img tag, otherwise render it as a React component */}
           {isImage ? (
-            <Image
+            <img
               src={`${process.env.STRAPI_API_URL}${icon.url}`}
               alt={icon.alternativeText || "Service Icon"}
               width={640}
